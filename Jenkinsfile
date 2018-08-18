@@ -3,7 +3,12 @@ pipeline {
   stages {
     stage ('build') {
        steps {
-         sh 'ant -f build.xlm -v'
+         sh 'hello build'
+       }
+    }  
+    stage ('test') {
+       steps {
+         sh 'hello test'
        }
     }  
   }
