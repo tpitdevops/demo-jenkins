@@ -1,8 +1,10 @@
 pipeline {
   agent any
-    stages {
-      steps {
-        sh 'ant -f build.xlm -v'
-      }
-    }
+  stages {
+    stage ('build' {
+       steps {
+         sh 'ant -f build.xlm -v'
+       }
+    }  
+  }
 }
